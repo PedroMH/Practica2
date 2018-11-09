@@ -1,4 +1,5 @@
 import java.util.Iterator;
+import javax.swing.text.html.HTMLDocument;
 
 
 //send help
@@ -9,11 +10,10 @@ import java.util.Iterator;
 public class practica2 {
 
 	public static void main(String[] args) {
-		int[] arrayEjemplo = new int[3];
+		int[] arrayEjemplo = new int[5];
 		for(int i =0;i<arrayEjemplo.length;i++){
 			arrayEjemplo[i]=i;
 		}
-		// HOLA!!!!
 	}
 	
 
