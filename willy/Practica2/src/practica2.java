@@ -6,7 +6,7 @@ import java.util.Iterator;
 //comprobar si es combinacion cumple los requisitos que queremos, la primera que los cumple es la solucion
 //lo primero es hacer el iterador y el metodo main, para ir probando se pueden introducir los datos directamente
 //la parte de leeer de un fichero se puede hacer posterior o a la vez
-public class practica2 {
+public class practica2 implements Iterable<int[]>{
 
 	public static void main(String[] args) {
 		int[] arrayEjemplo = new int[3];
@@ -15,20 +15,12 @@ public class practica2 {
 		}
 		//
 	}
-	
 
-}
-//porque coño hay dos clases (ejemplo de intranet)
-class IteradorCombinacion implements Iterable<int[]>{
-	private int[] array;
-	public IteradorCombinacion(int[] array){
-		this.array=array;
-	}
-	
+	@Override
 	public Iterator<int[]> iterator() {
-		return new IteradorCombn(array);
+		// TODO Auto-generated method stub
+		return null;
 	}
-	
 	private class IteradorCombn implements Iterator<int[]>{
 
 		public IteradorCombn(int[] array){
@@ -44,11 +36,5 @@ class IteradorCombinacion implements Iterable<int[]>{
 			return null;
 		}
 
-		public void remove() {
-			// TODO Auto-generated method stub
-			
-		}
-		
 	}
-	
 }
