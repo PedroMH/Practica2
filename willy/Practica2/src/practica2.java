@@ -13,7 +13,7 @@ public class practica2 {
 		for(int i =0;i<arrayEjemplo.length;i++){
 			arrayEjemplo[i]=i;
 		}
-		//
+		// HOLA!!!!
 	}
 	
 
